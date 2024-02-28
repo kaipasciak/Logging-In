@@ -1,0 +1,6 @@
+<Files *>
+Authtype CAS
+require valid-user
+satisfy any
+order allow,deny
+</Files>

@@ -1,3 +1,13 @@
+<?php
+    $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
+    $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
+
+    if (!in_array($netId, $allowedNetIds)) {
+        header("Location: unauthorized.php");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +17,11 @@
     <meta name="description" content="Class Exercise">
 </head>
 <body>
-    <h1>password protected</h1>
+    <h1>Password Protected</h1>
     <nav>
       <p><a href="../index.php">Public Site</a></p>
-  </nav>
+    </nav>
 
 </body>
-<?php
-    $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
-    $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
-?>
+
 </html>

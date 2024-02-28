@@ -8,5 +8,8 @@
 </head>
 <body>
   <h1>Landing page, not password protected</h1>
+  <nav>
+      <p><a href="protected/index.php">Members Only</a></p>
+  </nav>
 </body>
 </html>

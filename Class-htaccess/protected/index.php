@@ -14,7 +14,7 @@
       <p><a href="../index.php">Public Site</a></p>
     </nav>
     <?php
-        $allowedNetIds = array('rerickso','kpasciak', 'wclay');
+        $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
         $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
 
         if (!in_array($netId, $allowedNetIds)) {

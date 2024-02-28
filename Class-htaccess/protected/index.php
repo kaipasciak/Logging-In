@@ -8,10 +8,9 @@
 </head>
 <body>
 <nav>
+<h1>password protected</h1>
       <p><a href="../index.php">Public Site</a></p>
   </nav>
 
-<h1>password protected</h1>
-    
 </body>
 </html>

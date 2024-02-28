@@ -1,12 +1,4 @@
-<?php
-    $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
-    $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
 
-    if (!in_array($netId, $allowedNetIds)) {
-        header("Location: unauthorized.php");
-        exit;
-    }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +13,16 @@
     <nav>
       <p><a href="../index.php">Public Site</a></p>
     </nav>
+    <?php
+        $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
+        $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
+
+        if (!in_array($netId, $allowedNetIds)) {
+            print("Unauthorized")
+            exit;
+        }
+    ?>
+
 
 </body>
 

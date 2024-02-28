@@ -7,6 +7,9 @@
     <meta name="description" content="Class Exercise">
 </head>
 <body>
+<nav>
+      <p><a href="../index.php">Public Site</a></p>
+  </nav>
 
 <h1>password protected</h1>
     

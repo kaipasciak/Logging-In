@@ -22,6 +22,11 @@
         }
         else {
             print("<p>Authorized<p>");
+            print("<img alt="Kai"
+                  src="kai.jpg">")
+            print("<img alt="Arjun"
+                              src="ArjunSelfie.jpg">")
+
         }
     ?>
 

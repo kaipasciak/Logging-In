@@ -14,12 +14,14 @@
       <p><a href="../index.php">Public Site</a></p>
     </nav>
     <?php
-        $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
+        $allowedNetIds = array('rerickso','kpasciak', 'wclay');
         $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
 
         if (!in_array($netId, $allowedNetIds)) {
-            print("Unauthorized")
-            exit;
+            print("<p>Unauthorized</p>");
+        }
+        else {
+            print("<p>Authorized<p>");
         }
     ?>
 

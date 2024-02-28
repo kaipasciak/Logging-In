@@ -13,4 +13,8 @@
   </nav>
 
 </body>
+<?php
+    $allowedNetIds = array('rerickso', 'anair', 'kpasciak', 'wclay');
+    $netId = htmlentities($_SERVER["REMOTE_USER"], ENT_QUOTES, "UTF-8");
+?>
 </html>
